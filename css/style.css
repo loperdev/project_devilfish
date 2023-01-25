@@ -54,7 +54,7 @@
 
 
 .float-area {
-  height: 15vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,6 +94,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+
 }
 html{
     height: 100%;
@@ -158,6 +159,7 @@ header {
     z-index: 120;
     transition: 0.4s linear;
     -webkit-transition: 0.4s linear;
+
 }
 header .copyright{
     background: #202020;
@@ -174,6 +176,7 @@ header .copyright p{
 .navbar .container .navbar-brand,
 .navbar .container-fluid .navbar-brand {
     margin-left: 0;
+
 }
 .navbar-brand {
     float: none;
@@ -836,3 +839,59 @@ footer .copyright p{
     margin: 0;
 }
 /* **** End footer **** */
+
+.roadmap-block-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roadmap-block-section {
+  width: 30%;
+  /* Adjust as needed */
+  border: 3px solid #FF0000;
+  border-radius: 17px;
+  position: relative;
+  /* padding: 65px 150px 100px; */
+  border-bottom: 17px solid #FF0000;
+  z-index: 5;
+  margin: 19px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {
+  .roadmap-block-wrp {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .roadmap-block-section {
+    width: 100%;
+    /* Full width of the container */
+    margin: 10px 0;
+    /* Adjust as needed */
+    padding: 10px;
+    /* Adjust as needed */
+  }
+    .roadmap-wrp .pattern9 {
+     display: none;
+    }
+
+    .roadmap-wrp .pattern10 {
+     display: none;
+    }
+}
+
+.roadmap-wrp .pattern9 {
+  position: absolute;
+  right: 75px;
+  top: -150px;
+  max-width: 100%;
+}
+
+.roadmap-wrp .pattern10 {
+  position: absolute;
+  left: 140px;
+  bottom: -150px;
+}
