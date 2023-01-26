@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+    document.body.style.zoom="90%";
     /* **** scrollIt ***** */
     $(function () {
         $.scrollIt({
@@ -42,5 +42,5 @@ $(document).ready(function () {
         duration: 1000,
     });
     /* **** End AOS **** */
-    
+
 });
