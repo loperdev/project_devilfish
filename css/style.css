@@ -859,6 +859,13 @@ footer .copyright p{
   margin-bottom: 20px;
 }
 
+/* .roadmap-wrp .roadmap-block-section p {
+  font-family: 'Helvetica Neue LT Pro Roman';
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+} */
 
 .roadmap-wrp .roadmap-block-section:before {
   position: absolute;
