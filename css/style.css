@@ -860,6 +860,22 @@ footer .copyright p{
 }
 
 
+.roadmap-wrp .roadmap-block-section:before {
+  position: absolute;
+  content: "";
+  width: 34.5px;
+  height: 408.17px;
+  left: -18px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background-image: url("../images/card-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 @media (max-width: 600px) {
   .roadmap-block-wrp {
     flex-wrap: wrap;
@@ -874,13 +890,18 @@ footer .copyright p{
     padding: 10px;
     /* Adjust as needed */
   }
-    .roadmap-wrp .pattern9 {
-     display: none;
-    }
 
-    .roadmap-wrp .pattern10 {
-     display: none;
-    }
+  .roadmap-wrp .pattern9 {
+    display: none;
+  }
+
+  .roadmap-wrp .pattern10 {
+    display: none;
+  }
+
+  .roadmap-wrp .roadmap-block-section:before {
+    display: none;
+  }
 }
 
 .roadmap-wrp .pattern9 {
