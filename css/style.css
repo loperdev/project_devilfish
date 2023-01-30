@@ -137,7 +137,7 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
-     background-image: url("../images/body-background.webp");
+    background-image: url("../images/body-background.webp");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
