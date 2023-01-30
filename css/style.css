@@ -962,3 +962,11 @@ footer .copyright p{
   left: 140px;
   bottom: -150px;
 }
+ @media (max-width: 768px) {
+
+   /* Disable animations on mobile devices */
+   * {
+     /* animation: none !important; */
+     transition: none !important;
+   }
+ }
