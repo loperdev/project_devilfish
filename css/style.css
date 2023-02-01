@@ -842,3 +842,40 @@ footer .copyright p{
     }
 
 }
+/* new content ends */
+
+/* Floating effect  */
+.floating {
+  position: relative;
+  animation: floating 3s ease-in-out infinite;
+}.float-area {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-img {
+  transform: translateY(-10%);
+  animation: floater 2.5s infinite;
+  transition: ease 0.5s;
+  max-width: 100%;
+  /* height: 80px; */
+}
+
+
+
+@keyframes floater {
+  0% {
+    transform: translateY(-10%);
+    transition: ease 0.5s;
+  }
+
+  50% {
+    transform: translateY(10%);
+    transition: ease 0.5s;
+  }
+
+}
+/* Floating effect ends */
