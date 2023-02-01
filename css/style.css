@@ -966,12 +966,12 @@ footer .copyright p{
 
    /* Disable animations on mobile devices */
    * {
-     animation: none !important;
+     /* animation: none !important; */
      /* transition: none !important; */
    }
  }
 
-     body {
+     /* body {
        opacity: 0;
        visibility: hidden;
        transition: opacity 0.5s ease-in-out;
@@ -980,4 +980,11 @@ footer .copyright p{
      body.loaded {
        opacity: 1;
        visibility: visible;
-     }
+     } */
+
+/*
+         @media (max-width: 767px) {
+           .data-scroll-nav {
+             display: none !important;
+           }
+         } */

@@ -44,17 +44,17 @@ $(document).ready(function () {
     /* **** End AOS **** */
 
     // Detect if device is mobile
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+// var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-if (isMobile) {
-  // Remove data-aos attributes from elements
-  var elements = document.querySelectorAll("[data-aos]");
-  elements.forEach(function(element) {
-    element.removeAttribute("data-aos");
-  });
-} else {
-  // Initialize AOS library on desktop devices
-  AOS.init();
-}
+// if (isMobile) {
+//   // Remove data-aos attributes from elements
+//   var elements = document.querySelectorAll("[data-aos]");
+//   elements.forEach(function(element) {
+//     element.removeAttribute("data-aos");
+//   });
+// } else {
+//   // Initialize AOS library on desktop devices
+//   AOS.init();
+// }
 
 });
