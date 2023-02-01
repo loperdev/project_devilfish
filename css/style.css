@@ -966,8 +966,8 @@ footer .copyright p{
 
    /* Disable animations on mobile devices */
    * {
-     /* animation: none !important; */
-     /* transition: none !important; */
+     animation: none !important;
+     transition: none !important;
    }
  }
 
