@@ -350,7 +350,6 @@
 }
 
 @media(min-width:448px) and (max-width:575px){
-	.main-wrpper{background-image: url("../images/mobile-body-background.svg")}
 	.container{max-width: 100%;}
 	.hero-wrp .container{max-width: 100%;}
 	.gallery-wrp .container{max-width: 100%;}
@@ -430,7 +429,6 @@
 }
 
 @media(max-width:447px){
-	.main-wrpper{background-image: url("../images/mobile-body-background.svg")}
 	.container{max-width: 100%;}
 	.hero-wrp .container{max-width: 100%;}
 	.gallery-wrp .container{max-width: 100%;}

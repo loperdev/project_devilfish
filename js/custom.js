@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    document.body.style.zoom="90%";
+
     /* **** scrollIt ***** */
     $(function () {
         $.scrollIt({
@@ -42,19 +42,5 @@ $(document).ready(function () {
         duration: 1000,
     });
     /* **** End AOS **** */
-
-    // Detect if device is mobile
-// var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-// if (isMobile) {
-//   // Remove data-aos attributes from elements
-//   var elements = document.querySelectorAll("[data-aos]");
-//   elements.forEach(function(element) {
-//     element.removeAttribute("data-aos");
-//   });
-// } else {
-//   // Initialize AOS library on desktop devices
-//   AOS.init();
-// }
-
+    
 });
