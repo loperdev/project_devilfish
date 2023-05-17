@@ -741,52 +741,79 @@ header.nav-new .navbar {
   border-radius: 50px;
 }
 
-.devil-container .devil-vision .vision-container {
-  border-bottom: 2px solid #FF0000;
+.devil-container .devil-vision {
+  border-bottom: 3px solid #FF0000;
 
 }
 
-.devil-container .devil-vision .vision-container .vision-item {
-  padding: 2rem;
+.devil-container .devil-vision .vision-border {
+  border-right: 3px solid #FF0000;
 }
 
-.devil-container .devil-vision .vision-container .vision-item.vision-border {
-  border-right: 2px solid #FF0000;
+.devil-container .devil-vision .vision-item {
+  padding: 4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  min-height: 330px;
 }
 
-.devil-container .devil-vision .vision-container .vision-item p.title {
+.devil-container .devil-vision .vision-item:hover {
+  background: #691919;
+  border-radius: 50px 0px 0px 0px;
+}
+
+.devil-container .devil-vision .vision-item.second-vision:hover {
+  background: #691919;
+  border-radius: 0px 50px 0px 0px;
+}
+
+.devil-container .devil-vision .vision-item p.title {
   font-weight: 900;
   font-size: 18px;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
-.devil-container .devil-vision .vision-container .vision-item .devil {
+.devil-container .devil-vision .vision-item .devil {
   display: flex;
   align-items: center;
 }
 
-.devil-container .devil-vision .vision-container .vision-item .devil p {
+.devil-container .devil-vision .vision-item .devil p {
   font-weight: 400;
   color: #FFFFFF;
   font-size: 14px;
 }
 
-.devil-container .devil-vision .vision-container .vision-item .devil p.pl3 {
+
+.devil-container .devil-vision .vision-item .devil p.pl3 {
   width: 80px;
   padding-left: 3rem;
 }
 
-.devil-container .devil-vision .vision-container .vision-item .devil p span {
+.devil-container .devil-vision .vision-item .devil p span {
   border: 1px solid #FFFFFF;
   padding: 2px 7px;
   border-radius: 20px;
+  transition: 0.3s;
+}
+
+.devil-container .devil-vision .vision-item:hover .devil p span {
+  border-radius: 20px;
+  background: #FFFFFF;
+  color: #202020;
 }
 
 /* Devil Bottom  */
 .devil-container .devil-vision .devil-bottom {
+  padding: 4rem;
+  transition: 0.3s;
+  border-top: 3px solid #FF0000;
+  cursor: pointer;
+}
+
+.devil-container .devil-vision .devil-bottom:hover {
   background: #691919;
-  padding: 2rem;
   border-radius: 0px 0px 50px 50px;
 }
 
@@ -815,15 +842,30 @@ header.nav-new .navbar {
 
 .devil-container .devil-vision .devil-bottom .devil p span {
   border: 1px solid #FFFFFF;
-  padding: 5px 7px;
+  padding: 2px 7px;
   border-radius: 20px;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.devil-container .devil-vision .devil-bottom:hover .devil p span {
   background: #FFFFFF;
   color: #202020;
 }
 
 @media screen and (max-width: 992px) {
-  .devil-container .devil-vision .vision-container .vision-item.vision-border {
+  .devil-container .devil-vision .vision-item:hover {
+    background: #691919;
+    border-radius: 50px 50px 0px 0px;
+  }
+
+  .devil-container .devil-vision .vision-item.vision-border {
     border-right: none;
+    border-bottom: 2px solid #FF0000;
+  }
+
+  .devil-container .devil-vision .vision-item.second-vision:hover {
+    border-radius: 0px 0px 0px 0px;
   }
 
   .devil-container .title .title-info {
@@ -832,12 +874,12 @@ header.nav-new .navbar {
 }
 
 @media screen and (max-width: 542px) {
-  .devil-container .devil-vision .vision-container .vision-item .devil p.pl3 {
+  .devil-container .devil-vision .vision-item .devil p.pl3 {
     width: 50px;
     padding-left: 1rem;
   }
 
-  .devil-container .devil-vision .vision-container .vision-item .devil p span {
+  .devil-container .devil-vision .vision-item .devil p span {
     font-size: 12px;
   }
 
@@ -862,15 +904,15 @@ header.nav-new .navbar {
     font-size: 25px;
   }
 
-  .devil-container .devil-vision .vision-container .vision-item p.title {
+  .devil-container .devil-vision .vision-item p.title {
     font-size: 16px;
   }
 
-  .devil-container .devil-vision .vision-container .vision-item .devil p {
+  .devil-container .devil-vision .vision-item .devil p {
     font-size: 12px;
   }
 
-  .devil-container .devil-vision .vision-container .vision-item .devil p span {
+  .devil-container .devil-vision .vision-item .devil p span {
     padding: 2px 2px;
   }
 
@@ -886,7 +928,6 @@ header.nav-new .navbar {
     font-size: 16px;
   }
 }
-
 
 /* ****END DEVILFISH VISION **** */
 
