@@ -304,7 +304,7 @@ body {
 }
 
 .banner-context {
-    display: none;
+    /* display: none; */
 }
 
 
@@ -1219,8 +1219,8 @@ body {
 /* **** footer **** */
 /* **** footer **** */
 /* **** footer **** */
- .footer {
-   background: #FF3333;
+footer {
+   background: #400000;
  }
 footer .faq-title-img {
   width: 100%;
