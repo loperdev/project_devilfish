@@ -32,3 +32,33 @@ $(document).ready(function () {
         }
     });
 });
+
+
+// Team Section
+// Team Section
+// Team Section 
+const unlockTeamOne = document.getElementById('unlockTeamOne');
+const displayTeamOne = document.getElementById('displayTeamOne');
+
+unlockTeamOne.addEventListener('click', () => {
+    if (displayTeamOne.style.display === 'none') {
+        displayTeamOne.style.display = 'block';
+        setTimeout(() => {
+            displayTeamOne.style.opacity = '1';
+        }, 30);
+        unlockTeamOne.style.display = 'none';
+    }
+});
+
+const unlockTeamTwo = document.getElementById('unlockTeamTwo');
+const displayTeamTwo = document.getElementById('displayTeamTwo');
+
+unlockTeamTwo.addEventListener('click', () => {
+    if (displayTeamTwo.style.display === 'none') {
+        displayTeamTwo.style.display = 'block';
+        setTimeout(() => {
+            displayTeamTwo.style.opacity = '1';
+        }, 30);
+        unlockTeamTwo.style.display = 'none';
+    }
+});

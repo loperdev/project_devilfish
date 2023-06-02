@@ -36,7 +36,7 @@
     <!-- Header Navbar  -->
     <!-- Header Navbar  -->
     <!-- Header Navbar  -->
-    <header class="header">
+    <header id="home" class="header">
       <nav class="navbar navbar-expand-xl">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -48,6 +48,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-logo" href="#">
+                  <img src="./images/logo.png" alt="Logo">
+                </a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link active" data-scroll-nav="0" href="#">POKER CLUB</a>
               </li>
@@ -164,7 +169,7 @@
           </div>
         </div>
         <!-- Devil Item  -->
-        <div class="container-fulid mt-3">
+        <div class="container mt-3">
           <div class="row devil-vision">
 
             <div class="col-lg-6 col-md-12 vision-item vision-border">
@@ -508,14 +513,17 @@
                   <a href="https://discord.gg/Af3PaTJWEp">JOIN OUR DISCORD</a>
                 </div>
               </div>
-              <div class="bot">
-                <img class="img-fluid" src="./images/bot.png" alt="Photo">
+              <div class="bot mt-5">
+                <div class="mt-2">
+                  <img class="img-fluid" src="./images/bot.png" alt="Photo">
+                </div>
               </div>
             </div>
 
             <div class="col-lg-8 pt-5">
               <div class="right-details">
-                <p>The DevilFish Discord bot brings the game of poker directly to Discord. This unique bot allows users to
+                <p>The DevilFish Discord bot brings the game of poker directly to Discord. This unique bot allows users
+                  to
                   enjoy a complete poker experience within Discord itself. What sets it apart from other bots is its
                   seamless integration with Discord's features, including graphics and a dedicated Discord currency
                   system.</p>
@@ -553,7 +561,8 @@
         <div class="row mt-3">
           <!-- First Section -->
           <div class="col-lg-2 col-md-12 team-image mt-3 mb-3">
-            <img src="images/Group-43.png" class="img-fluid">
+            <img id="unlockTeamOne" src="images/team.svg" class="img-fluid">
+            <img style="display: none;" id="displayTeamOne" src="images/Group-43.png" class="img-fluid">
           </div>
           <div class="col-lg-5 col-md-6 col-sm-12">
             <a class="btn text-white btn-heading mb-3"
@@ -582,7 +591,8 @@
         <!-- Second Section -->
         <div class="row mt-5 das-border pt-5">
           <div class="col-lg-2 col-md-12 mb-3 team-image">
-            <img src="images/Group-42.png" class="img-fluid">
+            <img id="unlockTeamTwo" src="images/team.svg" class="img-fluid">
+            <img style="display: none;" id="displayTeamTwo" src="images/Group-42.png" class="img-fluid">
           </div>
           <div class="col-lg-5 col-md-6 col-sm-12">
             <a class="btn btn-danger btn-heading mb-3"
@@ -626,20 +636,22 @@
     <!-- Faq Section -->
     <section class="faq-wrp pt-5 pb-5" data-scroll-index="6">
       <div class="container">
-        <div class="faq-title text-center" data-aos="fade-up">
+        <div class="faq-title text-center" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
+          data-aos-anchor-placement="up-center">
           <!-- <img class="floating-img" src="images/title-img1.png" alt="" /> -->
           <h2>FAQ</h2>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <div class="faq-box" data-aos="fade-up" data-aos-offset="100"  data-aos-duration="1500"
+            <div class="faq-box" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1500"
               data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
               data-aos-anchor-placement="up-center">
               <h3>What blockchain will Devilfish be minting on?</h3>
               <p>Devilfish is going to be an Ethereum-based project.</p>
             </div>
-            <div class="faq-box" data-aos="fade-up" data-aos-offset="100"  data-aos-duration="1000"
+            <div class="faq-box" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000"
               data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
               data-aos-anchor-placement="up-center">
               <h3>What’s Devilfish NFT’s utility?</h3>
@@ -669,10 +681,10 @@
                   <h3>When will Devilfish be minting?</h3>
                   <p>TBA</p>
                 </div>
-                <div class=" faq-box" data-aos="fade-up" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000"
-              data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
+                <div class=" faq-box" data-aos="fade-up" data-aos-offset="100" data-aos-delay="20"
+              data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
               data-aos-anchor-placement="up-center">
-              <!-- <img src="images/faq-shap2.png" alt="" class="faq-shap2" /> -->
+              <img src="images/faq-shap2.png" alt="" class="faq-shap2" />
               <h3>What is the minting limit?</h3>
               <p>TBA</p>
             </div>
@@ -692,58 +704,63 @@
     <!-- About Section -->
     <!-- About Section -->
     <!-- About Section -->
-    <section class="about-wrp" data-scroll-index="7">
-      <!-- <img style="background: #400000;" src="images/faq-title-img.svg" alt="" class="img-fluid faq-title-img" /> -->
-      <!-- <img src="images/pattern9.png" class="pattern9" alt="" />
-      <img src="images/pattern10.png" class="pattern10" alt="" /> -->
-      <div class="about-container">
-        <div class="title text-center pt-5">
-          <h2>ABOUT <span>US</span></h2>
-        </div>
-        <div class="container pb-5">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 mt-3">
-              <div class="about-info">
-                <p>Professional Poker Player Dave “Devilfish” Ulliott was an
-                  iconic player and World Series of Poker bracelet-winner.</p>
-                <p>Dave Ulliott died in April 2015 but has been immortalised in
-                  the Poker hall of Fame and now on the blockchain through
-                  the DevilFish Poker Web3 Project.</p>
-                <p> Our platform is being built to celebrate poker greats such
-                  as Dave “Devilfish” Ulliot into the world of web3.</p>
+    <div class="about-us">
+      <img style="background: #400000;" src="images/faq-title-img.svg" alt="" class="img-fluid faq-title-img" />
+      <div class="about-wrp" data-scroll-index="7">
+        <!-- <img src="images/pattern9.png" class="pattern9" alt="" />
+        <img src="images/pattern10.png" class="pattern10" alt="" /> -->
+        <div class="about-container">
+          <div class="title text-center pt-5">
+            <h2>ABOUT <span>US</span></h2>
+          </div>
+          <div class="container pb-5">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mt-3">
+                <div class="about-info">
+                  <p>Professional Poker Player Dave “Devilfish” Ulliott was an
+                    iconic player and World Series of Poker bracelet-winner.</p>
+                  <p>Dave Ulliott died in April 2015 but has been immortalised in
+                    the Poker hall of Fame and now on the blockchain through
+                    the DevilFish Poker Web3 Project.</p>
+                  <p> Our platform is being built to celebrate poker greats such
+                    as Dave “Devilfish” Ulliot into the world of web3.</p>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-6 col-md-12 mt-3">
-              <div class="about-details">
-                <p>“Online poker is said to have generated revenue of more than $2.4 billion worldwide with a whole new
-                  generation of young players joining the community, many of whom have a passion for Crypto and NFTs”
-                </p>
+              <div class="col-lg-6 col-md-12 mt-3">
+                <div class="about-details">
+                  <p>“Online poker is said to have generated revenue of more than $2.4 billion worldwide with a whole
+                    new
+                    generation of young players joining the community, many of whom have a passion for Crypto and NFTs”
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- <img style="background: #400000;" src="images/faq-title-img.svg" alt="" class="img-fluid faq-title-img" /> -->
-    </section>
+      <img style="background: #400000;" src="images/faq-title-img.svg" alt="" class="img-fluid faq-title-img" />
+    </div>
     <!-- End About -->
 
 
 
     <!-- Footer -->
     <footer>
-      <div class="container">
-        <img src="images/faq-title-img.svg" alt="" class="faq-title-img" />
+      <div class="container pt-5">
+        <!-- <img src="images/faq-title-img.svg" alt="" class="faq-title-img" /> -->
 
         <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <ul class="footer-block">
-              <li><img src="images/footer-fish.png" alt="" class="footer-fish" /></li>
-              <li>
+          <div class="col-md-4 col-sm-12 mt-3">
+            <div class="footer-poker">
+              <div class="footer-logo">
                 <a href="#"><img src="images/footer-logo.png" alt="" /></a>
-              </li>
-            </ul>
+              </div>
+              <div class="poker-fish">
+                <img src="images/footer-fish.png" alt="" class="footer-fish" />
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 mt-3">
             <div class="quicklinks">
               <ul>
                 <!-- <li><a href="#">THE TEAM</a></li> -->
@@ -765,7 +782,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 mt-3">
             <div class="newsletter-block">
               <h2>Become a part of DevilFish Community! <span style="font-size: 12px;">Be the first to
                   know about updates and
@@ -780,8 +797,8 @@
               <div class="social-icons">
                 <ul>
                   <!-- <li><a href="#"> <img src="images/social-icon1.svg" alt="" /> </a></li> -->
-                  <li><a href="https://twitter.com/devilfish_nft?lang=en-GB"> <img
-                        src="images/social-icon2.svg" alt="" /> </a></li>
+                  <li><a href="https://twitter.com/devilfish_nft?lang=en-GB"> <img src="images/social-icon2.svg"
+                        alt="" /> </a></li>
                   <li><a href="discord.gg/devilfishpoker"> <img src="images/social-icon3.svg" alt="" /> </a></li>
                 </ul>
               </div>
@@ -854,6 +871,9 @@
     </footer> -->
     <!-- End Footer -->
   </div>
+  <a data-scroll-nav="0" href="#home" class="tp-link">
+    <img src="./images/up-arrow.png" alt="Up Arrow image">
+  </a>
 
   <!-- script -->
   <script src="js/jquery.js"></script>
