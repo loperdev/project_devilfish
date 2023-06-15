@@ -999,94 +999,126 @@ body {
 /* Team Section  */
 /* Team Section  */
 .team-section {
-    background: #1f0000;
+  background: #1f0000;
 }
 
 .team-section .title h2 {
-    font-size: 35px;
-    font-weight: 900;
-    color: #FFFFFF;
+  font-size: 35px;
+  font-weight: 900;
+  color: #FFFFFF;
 }
 
 .team-section .title h2 span {
-    color: #FF0000;
+  color: #FF0000;
 }
 
 .team-section .team-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 1000px;
+}
+
+.team-section .team-image .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.team-section .team-image .image-container:hover {
+  transform: rotateY(180deg);
+}
+
+.team-section .team-image .image-container .front-image,
+.team-section .team-image .image-container .back-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.team-section .team-image .image-container .front-image {
+  transform: rotateY(0deg);
+}
+
+.team-section .team-image .image-container .back-image {
+  transform: rotateY(180deg);
 }
 
 .team-section .team-image img {
-    width: 100%;
-    cursor: pointer;
+  width: 100%;
+  cursor: pointer;
 }
 
-.team-section #displayTeamOne {
-    opacity: 0;
-    transition: opacity 0.5s;
-    border: 5px solid #ffffff;
-    border-radius: 20px;
+.team-section .team-image #displayTeamOne,
+.team-section .team-image #displayTeamTwo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  border: 5px solid #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
 }
 
-.team-section #displayTeamTwo {
-    opacity: 0;
-    transition: opacity 0.5s;
-    border: 5px solid #ffffff;
-    border-radius: 20px;
+.team-section .team-image:hover #displayTeamOne,
+.team-section .team-image:hover #displayTeamTwo {
+  opacity: 1;
 }
 
 .team-section .das-border {
-    border-top: 2px dashed #FF0000;
+  border-top: 2px dashed #FF0000;
 }
 
-
 .btn_red {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-    display: table;
-    padding: 2px;
-    background: linear-gradient(110.39deg, #FF0000 3.27%, #380000 117.56%);
-    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
-    border-radius: 35px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  display: table;
+  padding: 2px;
+  background: linear-gradient(110.39deg, #FF0000 3.27%, #380000 117.56%);
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+  border-radius: 35px;
 }
 
 .btn_red span {
-    display: block;
-    background: #202020;
-    position: relative;
-    z-index: 7;
-    padding: 20px 95px;
-    border-radius: 35px;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+  display: block;
+  background: #202020;
+  position: relative;
+  z-index: 7;
+  padding: 20px 95px;
+  border-radius: 35px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .btn_red:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .btn_red:hover span {
-    background: transparent;
+  background: transparent;
 }
 
 /* Team Responsive Section  */
 @media screen and (max-width: 492px) {
-    .team-section .title h2 {
-        font-size: 25px;
-    }
-
+  .team-section .title h2 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 392px) {
-    .team-section .title h2 {
-        font-size: 20px;
-    }
-
+  .team-section .title h2 {
+    font-size: 20px;
+  }
 }
 
 
